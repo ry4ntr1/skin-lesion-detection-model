@@ -1,2 +1,2 @@
-## Image Segmentation Template
+## Object Detection Template
 

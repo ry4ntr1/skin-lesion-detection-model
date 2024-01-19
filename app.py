@@ -1,5 +1,5 @@
-from image_segmentation.logger import logging
-from image_segmentation.exception import CustomException
+from lesion_detection.logger import logging
+from lesion_detection.exception import CustomException
 
 logging.info("app.py: running")
 

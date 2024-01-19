@@ -4,7 +4,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name = "image_segmentation"  # Use snake_case for variable names
+project_name = "lesion_detection"  # Use snake_case for variable names
 
 file_paths = [  # More descriptive name
     ".github/workflows/.gitkeep",
