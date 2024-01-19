@@ -23,8 +23,8 @@ class ModelTrainer:
 
         try:
             logging.info("Unzipping data")
-            os.system("unzip data.zip")
-            os.system("rm data.zip")
+            os.system("unzip lesion_data.zip")
+            os.system("rm lesion_data.zip")
            
             os.system(f"yolo task=detect mode=train model={self.model_trainer_config.weight_name} data=data.yaml epochs={self.model_trainer_config.no_epochs} imgsz=640 save=true")
 
@@ -40,7 +40,7 @@ class ModelTrainer:
             os.system("rm -rf runs")
 
             model_trainer_artifact = ModelTrainerArtifact(
-                trained_model_file_path="artifacts/model_trainer/best.pt",
+                trained_model_file_path="best.pt",
             )
 
             logging.info("Exited initiate_model_trainer method of ModelTrainer class")

@@ -29,6 +29,7 @@ class DataIngestion:
 
             file_id = dataset_url.split("/")[-2]
             prefix = 'https://drive.google.com/uc?/export=download&id='
+            print(prefix+file_id)
             gdown.download(prefix+file_id,zip_file_path)
 
             logging.info(f"Downloaded data from {dataset_url} into file {zip_file_path}")
