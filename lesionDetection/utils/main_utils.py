@@ -2,8 +2,8 @@ import os.path
 import sys
 import yaml
 import base64
-from lesion_detection.exception import CustomException
-from lesion_detection.logger import logging
+from lesionDetection.exception import CustomException
+from lesionDetection.logger import logging
 
 def read_yaml_file(file_path: str) -> dict:
     try:

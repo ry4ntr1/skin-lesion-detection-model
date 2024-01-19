@@ -4,9 +4,9 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name = "lesion_detection"  # Use snake_case for variable names
+project_name = "lesionDetection" 
 
-file_paths = [  # More descriptive name
+file_paths = [  
     ".github/workflows/.gitkeep",
     "data/.gitkeep",
     f"{project_name}/__init__.py",
