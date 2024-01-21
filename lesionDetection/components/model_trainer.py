@@ -40,7 +40,7 @@ class ModelTrainer:
             os.system("rm -rf runs")
 
             model_trainer_artifact = ModelTrainerArtifact(
-                trained_model_file_path="best.pt",
+                trained_model_file_path="./best.pt",
             )
 
             logging.info("Exited initiate_model_trainer method of ModelTrainer class")
